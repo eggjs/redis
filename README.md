@@ -233,6 +233,26 @@ module.exports = app => {
 };
 ```
 
+## For the local dev
+
+Run docker compose to start test redis service
+
+```bash
+docker compose -f docker-compose.yml up -d
+```
+
+Run the unit tests
+
+```bash
+npm test
+```
+
+Stop test redis service
+
+```bash
+docker compose -f docker-compose.yml down
+```
+
 ## Questions & Suggestions
 
 Please open an issue [here](https://github.com/eggjs/egg/issues).

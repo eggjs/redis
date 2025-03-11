@@ -14,6 +14,7 @@ declare module 'egg' {
 export default class HomeController extends Controller {
   async index() {
     const { ctx,app } = this;
+    // @deprecated please use `getSingletonInstance(id)` instead
     const redis = app.redis.get('cache') as unknown as Redis;
     await redis.set('foo', 'bar');
     const redis2 = app.redis.getSingletonInstance('cache');
