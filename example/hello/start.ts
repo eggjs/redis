@@ -1,5 +1,6 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+
 import { startEgg } from 'egg';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -9,4 +10,7 @@ const app = await startEgg({
   baseDir: __dirname,
 });
 
-console.log(`Server started at http://localhost:${app.config.cluster.listen.port}`);
+// oxlint-disable-next-line no-console
+console.log(
+  `Server started at http://localhost:${app.config.cluster.listen.port}`
+);

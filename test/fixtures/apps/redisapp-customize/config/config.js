@@ -7,7 +7,7 @@ exports.redis = {
     password: '',
     db: '0',
   },
-  agent:true,
+  agent: true,
   Redis: require('ioredis'),
 };
 

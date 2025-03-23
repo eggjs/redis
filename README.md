@@ -49,12 +49,12 @@ Configure redis information in `${app_root}/config/config.default.js`:
 ```javascript
 config.redis = {
   client: {
-    port: 6379,          // Redis port
-    host: '127.0.0.1',   // Redis host
+    port: 6379, // Redis port
+    host: '127.0.0.1', // Redis host
     password: 'auth',
     db: 0,
   },
-}
+};
 ```
 
 **Multi Clients**
@@ -62,9 +62,10 @@ config.redis = {
 ```javascript
 config.redis = {
   clients: {
-    foo: {                 // instanceName. See below
-      port: 6379,          // Redis port
-      host: '127.0.0.1',   // Redis host
+    foo: {
+      // instanceName. See below
+      port: 6379, // Redis port
+      host: '127.0.0.1', // Redis host
       password: 'auth',
       db: 0,
     },
@@ -74,8 +75,8 @@ config.redis = {
       password: 'auth',
       db: 1,
     },
-  }
-}
+  },
+};
 ```
 
 **Sentinel**
@@ -86,16 +87,16 @@ config.redis = {
     // Sentinel instances
     sentinels: [
       {
-        port: 26379,         // Sentinel port
-        host: '127.0.0.1',   // Sentinel host
+        port: 26379, // Sentinel port
+        host: '127.0.0.1', // Sentinel host
       },
       // other sentinel instance config
     ],
-    name: 'mymaster',      // Master name
+    name: 'mymaster', // Master name
     password: 'auth',
-    db: 0
+    db: 0,
   },
-}
+};
 ```
 
 **No password**
@@ -127,12 +128,12 @@ you can pass the instance by `config.redis.Redis`:
 config.redis = {
   Redis: require('ioredis'), // customize ioredis version, only set when you needed
   client: {
-    port: 6379,          // Redis port
-    host: '127.0.0.1',   // Redis host
+    port: 6379, // Redis port
+    host: '127.0.0.1', // Redis host
     password: 'auth',
     db: 0,
   },
-}
+};
 ```
 
 **weakDependent**
@@ -140,13 +141,13 @@ config.redis = {
 ```javascript
 config.redis = {
   client: {
-    port: 6379,          // Redis port
-    host: '127.0.0.1',   // Redis host
+    port: 6379, // Redis port
+    host: '127.0.0.1', // Redis host
     password: 'auth',
     db: 0,
     weakDependent: true, // the redis instance won't block app start
   },
-}
+};
 ```
 
 ## Usage
