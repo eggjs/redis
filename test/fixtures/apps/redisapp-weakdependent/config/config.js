@@ -6,7 +6,7 @@ exports.redis = {
     password: '',
     db: '0',
   },
-  agent:true,
+  agent: true,
 };
 
 exports.logger = {

@@ -1,6 +1,7 @@
 import compile from 'node:child_process';
 import path from 'node:path';
-import { mm, MockApplication } from '@eggjs/mock';
+
+import { mm, type MockApplication } from '@eggjs/mock';
 import snapshot from 'snap-shot-it';
 
 describe('test/redis.test.js', () => {
@@ -20,10 +21,7 @@ describe('test/redis.test.js', () => {
     });
 
     it('should query', () => {
-      return app.httpRequest()
-        .get('/')
-        .expect(200)
-        .expect('bar');
+      return app.httpRequest().get('/').expect(200).expect('bar');
     });
   });
 
@@ -39,10 +37,7 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return app.httpRequest()
-        .get('/')
-        .expect(200)
-        .expect('bar');
+      return app.httpRequest().get('/').expect(200).expect('bar');
     });
   });
 
@@ -58,10 +53,7 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return app.httpRequest()
-        .get('/')
-        .expect(200)
-        .expect('bar');
+      return app.httpRequest().get('/').expect(200).expect('bar');
     });
   });
 
@@ -77,10 +69,7 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return app.httpRequest()
-        .get('/')
-        .expect(200)
-        .expect('bar');
+      return app.httpRequest().get('/').expect(200).expect('bar');
     });
   });
 
@@ -96,10 +85,7 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return app.httpRequest()
-        .get('/')
-        .expect(200)
-        .expect('bar');
+      return app.httpRequest().get('/').expect(200).expect('bar');
     });
   });
 
@@ -126,10 +112,7 @@ describe('test/redis.test.js', () => {
     });
 
     it('should query', () => {
-      return app.httpRequest()
-        .get('/')
-        .expect(200)
-        .expect('bar');
+      return app.httpRequest().get('/').expect(200).expect('bar');
     });
   });
 
@@ -152,10 +135,7 @@ describe('test/redis.test.js', () => {
     });
 
     it('should query', () => {
-      return app.httpRequest()
-        .get('/')
-        .expect(200)
-        .expect('bar');
+      return app.httpRequest().get('/').expect(200).expect('bar');
     });
   });
 
@@ -172,10 +152,7 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return app.httpRequest()
-        .get('/')
-        .expect(200)
-        .expect('bar');
+      return app.httpRequest().get('/').expect(200).expect('bar');
     });
   });
 
@@ -191,10 +168,7 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return app.httpRequest()
-        .get('/')
-        .expect(200)
-        .expect('bar');
+      return app.httpRequest().get('/').expect(200).expect('bar');
     });
   });
 
@@ -211,10 +185,7 @@ describe('test/redis.test.js', () => {
     afterEach(mm.restore);
 
     it('should query', () => {
-      return app.httpRequest()
-        .get('/')
-        .expect(200)
-        .expect('bar');
+      return app.httpRequest().get('/').expect(200).expect('bar');
     });
   });
 });

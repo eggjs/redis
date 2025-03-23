@@ -2,9 +2,9 @@
 
 exports.redis = {
   client: {
-    path: '/tmp/redis.sock'
+    path: '/tmp/redis.sock',
   },
-  agent: true
+  agent: true,
 };
 
 exports.keys = 'keys';

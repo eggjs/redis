@@ -1,4 +1,4 @@
-import type { RedisOptions, ClusterOptions } from 'ioredis';
+import type { RedisOptions, ClusterOptions, Redis } from 'ioredis';
 
 export interface RedisClientOptions extends RedisOptions {
   /**
@@ -54,7 +54,7 @@ export interface RedisConfig {
    *
    * Default to `undefined`, which means using the built-in ioredis
    */
-  Redis?: any;
+  Redis?: typeof Redis;
 }
 
 export default {

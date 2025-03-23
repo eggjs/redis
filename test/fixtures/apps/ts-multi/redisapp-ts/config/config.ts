@@ -2,10 +2,10 @@
 
 export default {
   keys: 'keys',
-  logger:{
+  logger: {
     level: 'INFO',
   },
-  redis :{
+  redis: {
     clients: {
       session: {
         host: '127.0.0.1',
@@ -20,6 +20,6 @@ export default {
         db: '1',
       },
     },
-    agent:true,
-  }  
-}
+    agent: true,
+  },
+};
