@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.0](https://github.com/eggjs/redis/compare/v3.0.0...v3.1.0) (2025-03-23)
+
+
+### Features
+
+* use oxlint and prettier ([#48](https://github.com/eggjs/redis/issues/48)) ([9900e87](https://github.com/eggjs/redis/commit/9900e87965068b58b4ffcafc2ac1491c0f03b609))
+
 ## [3.0.0](https://github.com/eggjs/redis/compare/v2.6.1...v3.0.0) (2025-01-21)
 
 
