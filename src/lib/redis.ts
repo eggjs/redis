@@ -32,13 +32,13 @@ function createClient(
 
   if ('cluster' in options && options.cluster === true) {
     const config = options as RedisClusterOptions;
-    assert(
+    assert.ok(
       config.nodes && config.nodes.length > 0,
       '[@eggjs/redis] cluster nodes configuration is required when use cluster redis'
     );
 
     for (const client of config.nodes) {
-      assert(
+      assert.ok(
         client.host && client.port,
         `[@eggjs/redis] 'host: ${client.host}', 'port: ${client.port}' are required on config`
       );
@@ -47,20 +47,20 @@ function createClient(
     client = new RedisClass.Cluster(config.nodes, config);
   } else if ('sentinels' in options && options.sentinels) {
     const config = options as RedisClientOptions;
-    assert(
+    assert.ok(
       config.sentinels && config.sentinels.length > 0,
       '[@eggjs/redis] sentinels configuration is required when use redis sentinel'
     );
 
     for (const sentinel of config.sentinels) {
-      assert(
+      assert.ok(
         sentinel.host && sentinel.port,
         `[@eggjs/redis] 'host: ${sentinel.host}', 'port: ${sentinel.port}' are required on config`
       );
     }
 
     const mask = config.password ? '***' : config.password;
-    assert(
+    assert.ok(
       config.name && config.password !== undefined && config.db !== undefined,
       `[@eggjs/redis] 'name of master: ${config.name}', 'password: ${mask}', 'db: ${config.db}' are required on config`
     );
@@ -70,7 +70,7 @@ function createClient(
   } else {
     const config = options as RedisClientOptions;
     const mask = config.password ? '***' : config.password;
-    assert(
+    assert.ok(
       (config.host &&
         config.port &&
         config.password !== undefined &&
