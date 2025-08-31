@@ -42,6 +42,7 @@
     "@arethetypeswrong/cli": "^0.17.4",
     "@eggjs/bin": "7",
     "@eggjs/mock": "^6.0.5",
+    "@eggjs/oxlint-config": "^1.0.0",
     "@eggjs/tsconfig": "1",
     "@types/mocha": "10",
     "@types/node": "22",
