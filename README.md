@@ -20,6 +20,10 @@
 
 Valkey / Redis client (support [redis protocol](https://redis.io/docs/latest/develop/reference/protocol-spec/)) based on iovalkey for egg framework
 
+## Version Notes
+
+`@eggjs/redis` only supports `egg@4` now, if you are using `egg@3` or `egg@2`, you should use [`egg-redis`](https://github.com/eggjs/redis/tree/2.x).
+
 ## Install
 
 ```bash
